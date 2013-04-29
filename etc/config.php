@@ -38,9 +38,23 @@ elseif ($_SERVER['SERVER_NAME'] == 'www.entry-t.tp1.jp' || $_SERVER['SERVER_NAME
 }
 
 else {
+	error_reporting(E_ALL ^ E_NOTICE);
+	ini_set("display_errors", 'On');
+
+	define('CNF_SV_TYPE', 0);	// 0: テスト /1: 本番 /2: 本番テスト
+	define('CNF_DOMAIN', '../');
+	define('CNF_ROOT', '../');
+	define('CNF_DOCROOT_PATH', CNF_ROOT.'www/');
+	define('CNF_ROOT_URL', 'http://'.CNF_DOMAIN.'/');
+	define('CNF_ROOT_URL_SSL', 'https://'.CNF_DOMAIN.'/');
+}
+
+
+/*
+else {
 	print "Setting Error.";
 	exit();
-}
+}*/
 
 // 設定ファイル入りディレクトリ
 DEFINE('CNF_ETC_PATH', CNF_ROOT.'etc/');

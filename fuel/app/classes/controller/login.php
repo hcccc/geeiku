@@ -27,6 +27,8 @@ class Controller_Login extends \Fuel\Core\Controller
 		if($_COOKIE["fuelcid"] != "" && \Session::get('user_id') != ""){
 			\Response::redirect(SITE_URL.'users');
 		}else{
+
+
 			return Response::forge(View::forge('login/index'));
 		}
 		exit;
@@ -41,6 +43,8 @@ class Controller_Login extends \Fuel\Core\Controller
 		
 		$twitter = new \Twitter\Twitter();
 		$twitter->auth();
+
+		var_dump("end of action form");
 	}
 	
 	public function action_callback()
