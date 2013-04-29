@@ -9,6 +9,10 @@
  * @package  app
  * @extends  Controller
  */
+
+
+require_once 'HTTP/OAuth/Consumer.php';
+require_once 'Services/Twitter.php';
 class Controller_Welcome extends Controller
 {
 

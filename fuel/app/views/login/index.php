@@ -43,7 +43,7 @@
 				PC（Firefox、Chrome、Safari)、スマートフォンです。<br />
 				携帯（ガラケー）は動作確認してません！あとIEで見ると酷いことになりますのでご了承ください！
 				
-				<?php echo Form::open('login/form');  ?>
+				<?php echo Form::open('index.php/login/form');  ?>
 				<div class="actions m-top">
 				<?php echo Form::submit('submit', 'Twitter認証へ'); ?>
 				</div>
