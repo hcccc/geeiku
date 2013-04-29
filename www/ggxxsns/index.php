@@ -30,7 +30,7 @@ defined('FUEL_START_TIME') or define('FUEL_START_TIME', microtime(true));
 defined('FUEL_START_MEM') or define('FUEL_START_MEM', memory_get_usage());
 
 
-define('SITE_URL','http://sou-opinion.sakura.ne.jp/ggxxsns/');
+define('SITE_URL','http://localhost/~hc0519/geeiku/www/ggxxsns/');
 
 // Boot the app
 require APPPATH.'bootstrap.php';
@@ -58,7 +58,9 @@ define('TITLE', 'ゲーセンいこうよ！');
 // Generate the request, execute it and send the output.
 try
 {
+	var_dump("www/index");
 	$response = Request::forge()->execute()->response();
+
 }
 catch (HttpNotFoundException $e)
 {
@@ -67,7 +69,7 @@ catch (HttpNotFoundException $e)
 	if($route instanceof Closure)
 	{
 		$response = $route();
-		
+
 		if( ! $response instanceof Response)
 		{
 			$response = Response::forge($response);

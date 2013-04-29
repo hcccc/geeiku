@@ -7,6 +7,7 @@ return array(
 	'userstest' => 'userstest',
 	'users/form' => 'users/form',
 	'users/twit' => 'users/twit',
+	'login/form' => 'login/index',
 	'login/callback' => 'login/callback',
 	'search' => 'search',
 	//'hello(/:name)?' => array('welcome/hello', 'name' => 'hello'),

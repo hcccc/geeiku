@@ -10,29 +10,13 @@
 </head>
 <body>
 	<div class="container-fluid">
-<?php	if(!preg_match( "/(iPhone|iPod|iPad|Android|BlackBerry)/", $_SERVER['HTTP_USER_AGENT'] ) ) {	?>
-			<div class="navbar navbar-fixed-top">
-			  <div class="navbar-inner">
-				<div class="container">
-				  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-				  </a>
-				  <a class="brand" href="./"><?php echo TITLE ?></a>
-					<div class="nav-collapse">
-						<ul class="nav">
-						</ul>
-					</div><!--/.nav-collapse -->          
-				</div>
-			  </div>
-			</div>
-<?php	}else{	?>
-		<h3><?php echo TITLE ?></h3>
-<?php	}	?>
+	
+	<!-- Deleted relative design part to make coding easier -->
+	<!-- TODO: copy back the HTML part-->
+	
 		<div class="row-fluid">
 			<div class="span12" style="margin:20px 0px 20px;">
-				
+				<br />
 				<h5>はじめに</h5>
 				このWebサービスはみんなで今日どこのゲームセンターに行くかを登録して
 				「今日は誰かいるかな？」とか「あいつ今日来るかな？」といった情報をサーチして快適にゲーセンに行くためのツールです。<br />
@@ -60,4 +44,3 @@
 	
 </body>
 </html>
-
