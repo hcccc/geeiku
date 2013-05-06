@@ -48,8 +48,11 @@ class Controller_Login extends \Fuel\Core\Controller
 		var_dump("action_callback");
 
 		$twitter = new \Twitter\Twitter();
+
+		var_dump($twitter);
+
 		$account = $twitter->get_callback_auth(\Input::get('oauth_verifier'));
-		\Response::redirect(SITE_URL.'users');	
+		\Response::redirect(SITE_URL.'http://localhost/~hc0519/geeiku/www/ggxxsns/index.php/users');	
 	}
 }
 
