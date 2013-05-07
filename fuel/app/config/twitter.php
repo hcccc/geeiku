@@ -7,7 +7,7 @@ return array(
 	'consumer_key' => 'dlprZm1Ayqvg5pbvds0I3Q',
 	'consumer_secret' => 'lGR9uQ8NAZB2nwdUuskT96f14oPNYV7IE8hSRqLQ',
 
-	'callback' => 'http://sou-opinion.sakura.ne.jp/ggxxsns/login/callback',
+	'callback' => 'http://localhost/~hc0519/geeiku/www/ggxxsns/index.php/login/callback',
 	'api_url' => 'https://api.twitter.com',
 );
 
