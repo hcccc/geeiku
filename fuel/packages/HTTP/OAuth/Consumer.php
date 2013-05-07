@@ -164,7 +164,7 @@ class HTTP_OAuth_Consumer extends HTTP_OAuth
         $response = $this->sendRequest($url, $additional, $method);
 
         $data     = $response->getDataFromBody();
-		
+        
 		if (empty($data['oauth_token']) || empty($data['oauth_token_secret'])) {
             throw new HTTP_OAuth_Consumer_Exception_InvalidResponse(
                 'Failed getting token and token secret from response', $response

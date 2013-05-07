@@ -4,7 +4,7 @@
 #php_value auto_prepend_file "sou-opinion.sakura.ne.jp/config.php"
 #php_value short_open_tag Off
 
-AuthUserFile /home/sou-opinion/etc/.htpasswd
+AuthUserFile /etc/.htpasswd
 AuthType Basic
 AuthGroupFile /dev/null
 AuthName IDとパスワードを入力してください

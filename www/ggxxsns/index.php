@@ -30,7 +30,7 @@ defined('FUEL_START_TIME') or define('FUEL_START_TIME', microtime(true));
 defined('FUEL_START_MEM') or define('FUEL_START_MEM', memory_get_usage());
 
 
-define('SITE_URL','http://localhost/~hc0519/geeiku/www/ggxxsns/index.php');
+define('SITE_URL','http://localhost/~hc0519/geeiku/www/ggxxsns/index.php/');
 
 // Boot the app
 require APPPATH.'bootstrap.php';
