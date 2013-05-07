@@ -9,11 +9,11 @@ return array(
 	'default' => array(
 		'type' => 'mysql',
 		'connection' => array(
-			'hostname' => 'localhost',
+			'hostname' => '127.0.0.1',
 			'port' => '',
 			'database' => 'geeiku',
 			'username' => 'root',
-			'password' => '',
+			'password' => 'test',
 		),
 		'identifier' => '`',
 		'table_prefix' => '',
